@@ -17,10 +17,14 @@ public class Main {
         // Adds up sales from sales array to calculate totals for each city
         int[] totals = {(consoleSales[0][0]+consoleSales[0][1]+consoleSales[0][2]), (consoleSales[1][0]+consoleSales[1][1]+consoleSales[1][2]), (consoleSales[2][0]+consoleSales[2][1]+consoleSales[2][2]) };
 
+
+        //Holds the totals for each city for easy retrieval
         int totalCapeTown = totals[0];
         int totalPortElizabeth = totals[1];
         int totalPretoria = totals[2];
 
+
+        //Prints Report
         System.out.println("-----------------------------------------------------------------------------------------------------------");
         System.out.println("GAMING CONSOLE REPORT");
         System.out.println("-----------------------------------------------------------------------------------------------------------");
@@ -40,6 +44,8 @@ public class Main {
 
         String mostSales = cities[0];
 
+
+        //Checks for which city has the highest total sales and prints only it. Default is Cape Town
         if (totalPortElizabeth > totalCapeTown) {
             mostSales = cities[1];
         }
